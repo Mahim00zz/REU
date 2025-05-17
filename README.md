@@ -59,21 +59,24 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-**Data**
+###Data###
+
 The dataset consists of residential electricity consumption time-series, sourced from [Kaggle]. Data preprocessing includes handling missing values, outlier detection, and normalization using MinMaxScaler and StandardScaler to improve model convergence.
 
 Data: https://www.kaggle.com/datasets/robikscube/hourly-energy-consumption
 
-**Methodology**
+###Methodology###
 
 **Models Implemented**
+
 -LSTM (Long Short-Term Memory): Baseline recurrent neural network for sequence prediction.
 
 -CNN (Convolutional Neural Network): Adapted for time-series feature extraction and forecasting.
 
 -Custom Transformer: Novel architecture integrating multi-head attention and dropout for robust, scalable forecasting.
 
-**Training Details**
+###Training Details###
+
 -Loss function: Mean Squared Error (MSE)
 
 -Optimizer: AdamW with weight decay regularization
@@ -82,7 +85,8 @@ Data: https://www.kaggle.com/datasets/robikscube/hourly-energy-consumption
 
 -Training performed on CPU Emvionment
 
-**Usage**
+###Usage###
+
 Open and run the Jupyter notebook electricity_demand_forecasting.ipynb or use Google Colab for an interactive environment.
 
 Steps include:
@@ -95,14 +99,15 @@ Evaluation and visualization of results
 
 Hyperparameter tuning examples
 
-**Evaluation Metrics**
+###Evaluation Metrics###
 Root Mean Squared Error (RMSE): Measures average prediction error magnitude.
 
 Mean Absolute Error (MAE): Average of absolute differences between predictions and actual values.
 
 Mean Absolute Percentage Error (MAPE): Relative error expressed as a percentage, useful for interpretability.
 
-**Results**
+###Results###
+
 Custom Transformer significantly outperformed baseline models, reducing RMSE by ~82%.
 
 Visualizations illustrate convergence speed, prediction accuracy, and error distribution.
@@ -124,7 +129,8 @@ Results suggest Transformer’s superior capability in capturing temporal depend
 
 ![image](https://github.com/user-attachments/assets/ba9d26a6-9327-4fa1-b01f-72ddbcfd7e10)
 
-**Future Work**
+###Future Work###
+
 Extend model to incorporate exogenous variables such as weather, occupancy, or economic factors.
 
 Deploy forecasting model as an API for real-time prediction in smart grid applications.
@@ -133,7 +139,8 @@ Investigate model interpretability using attention weights analysis.
 
 Expand dataset to multiple regions for generalized forecasting.
 
-**References**
+###References###
+
 Vaswani, Ashish, et al. “Attention Is All You Need.” NeurIPS, 2017.
 
 Kingma, Diederik P., and Jimmy Ba. “Adam: A Method for Stochastic Optimization.” ICLR, 2015.
