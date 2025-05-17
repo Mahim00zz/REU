@@ -59,13 +59,13 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-###Data###
+### Data
 
 The dataset consists of residential electricity consumption time-series, sourced from [Kaggle]. Data preprocessing includes handling missing values, outlier detection, and normalization using MinMaxScaler and StandardScaler to improve model convergence.
 
 Data: https://www.kaggle.com/datasets/robikscube/hourly-energy-consumption
 
-###Methodology###
+### Methodology 
 
 **Models Implemented**
 
@@ -85,7 +85,7 @@ Data: https://www.kaggle.com/datasets/robikscube/hourly-energy-consumption
 
 -Training performed on CPU Emvionment
 
-###Usage###
+### Usage 
 
 Open and run the Jupyter notebook electricity_demand_forecasting.ipynb or use Google Colab for an interactive environment.
 
@@ -99,14 +99,14 @@ Evaluation and visualization of results
 
 Hyperparameter tuning examples
 
-###Evaluation Metrics###
+### Evaluation Metrics 
 Root Mean Squared Error (RMSE): Measures average prediction error magnitude.
 
 Mean Absolute Error (MAE): Average of absolute differences between predictions and actual values.
 
 Mean Absolute Percentage Error (MAPE): Relative error expressed as a percentage, useful for interpretability.
 
-###Results###
+### Results
 
 Custom Transformer significantly outperformed baseline models, reducing RMSE by ~82%.
 
@@ -114,7 +114,7 @@ Visualizations illustrate convergence speed, prediction accuracy, and error dist
 
 Results suggest Transformer’s superior capability in capturing temporal dependencies in electricity demand.
 
-**Screenshots: **
+** Screenshots: **
 ![image](https://github.com/user-attachments/assets/6199a3cf-d2ec-4676-8294-a5b4c3e03005)
 
 ![image](https://github.com/user-attachments/assets/282cde82-ee0c-4cfa-92ed-7a90d4e16919)
@@ -129,7 +129,7 @@ Results suggest Transformer’s superior capability in capturing temporal depend
 
 ![image](https://github.com/user-attachments/assets/ba9d26a6-9327-4fa1-b01f-72ddbcfd7e10)
 
-###Future Work###
+### Future Work 
 
 Extend model to incorporate exogenous variables such as weather, occupancy, or economic factors.
 
@@ -139,7 +139,7 @@ Investigate model interpretability using attention weights analysis.
 
 Expand dataset to multiple regions for generalized forecasting.
 
-###References###
+### References
 
 Vaswani, Ashish, et al. “Attention Is All You Need.” NeurIPS, 2017.
 
