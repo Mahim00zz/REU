@@ -59,12 +59,13 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Data
+**Data**
 The dataset consists of residential electricity consumption time-series, sourced from [Kaggle]. Data preprocessing includes handling missing values, outlier detection, and normalization using MinMaxScaler and StandardScaler to improve model convergence.
 
 Data: https://www.kaggle.com/datasets/robikscube/hourly-energy-consumption
 
-Methodology
+**Methodology**
+
 **Models Implemented**
 -LSTM (Long Short-Term Memory): Baseline recurrent neural network for sequence prediction.
 
@@ -108,7 +109,7 @@ Visualizations illustrate convergence speed, prediction accuracy, and error dist
 
 Results suggest Transformer’s superior capability in capturing temporal dependencies in electricity demand.
 
-Screenshots: 
+**Screenshots: **
 ![image](https://github.com/user-attachments/assets/6199a3cf-d2ec-4676-8294-a5b4c3e03005)
 
 ![image](https://github.com/user-attachments/assets/282cde82-ee0c-4cfa-92ed-7a90d4e16919)
